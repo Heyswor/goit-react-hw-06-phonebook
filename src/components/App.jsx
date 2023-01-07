@@ -21,6 +21,7 @@ export function App() {
   };
 
   const lowercaseFilter = filter.toLocaleLowerCase();
+  
   const filtredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(lowercaseFilter)
   );
