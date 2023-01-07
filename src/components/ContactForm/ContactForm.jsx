@@ -15,7 +15,7 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = values => {
+  const onHandleSubmit = values => {
     const { name, number } = values;
     const findedContact = contacts.find(contact =>
       contact.name.toLowerCase().includes(name.toLowerCase())
@@ -32,7 +32,7 @@ export function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className={css.contactForm}>
+      <form onSubmit={handleSubmit(onHandleSubmit)} className={css.contactForm}>
         <label htmlFor="">
           Name
           <input
