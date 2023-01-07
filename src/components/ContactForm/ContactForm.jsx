@@ -25,8 +25,7 @@ export function ContactForm() {
       return;
     } else {
       dispatch(addContact(name, number));
-    }
-    
+    }    
     resetField('name');
     resetField('number');
   };
